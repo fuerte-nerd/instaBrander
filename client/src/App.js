@@ -105,11 +105,11 @@ function App() {
       fd.append("file", file);
     });
     axios
-      .post("http://localhost:5000/upload", fd, {
+      .post("/upload", fd, {
         "Content-Type": "multipart/form-data"
       })
       .then(res => {
-        window.open(`http://localhost:5000/download/${res.data.link}`);
+        window.open(`/download/${res.data.link}`);
         setAppState({
           ...initialState,
           isUploading: false
