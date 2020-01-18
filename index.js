@@ -33,7 +33,7 @@ app.post("/upload", (req, res) => {
     .catch(err => {
       console.log(err);
 
-      res.status(400).json({ success: false, err: err });
+      res.status(400).json({ success: false, msg: err });
     });
 });
 if(process.env.NODE_ENV){
