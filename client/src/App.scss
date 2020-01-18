@@ -1,0 +1,11 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+body{
+    // font-family: monospace;
+    font-family: 'Roboto';
+}
+
+h1, button{
+    text-transform: uppercase;
+    // font-weight: 100 !important;
+}
