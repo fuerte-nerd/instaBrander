@@ -28,12 +28,12 @@ module.exports = data => {
       });
     } else {
       const filePath = fs.readdirSync(
-        // path.join(__dirname, "../", "temp", "processed")
-        path.join(__dirname, "temp", "processed")
+        path.join(__dirname, "../", "temp", "processed")
+        // path.join(__dirname, "temp", "processed")
       );
       fs.readFile(
         // path.join(__dirname, "../", "temp", "processed", filePath[0]),
-        path.join(__dirname, "temp", "processed", filePath[0]),
+        path.join(__dirname, "../", "temp", "processed", filePath[0]),
         (err, data) => {
           if (err) rej(err);
           fs.writeFile(path.join(downloadPath, filePath[0]), data, err => {
