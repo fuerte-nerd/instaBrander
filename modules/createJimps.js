@@ -29,6 +29,8 @@ module.exports = req => {
         });
     }
 
+    console.log('we created the main jimps')
+
     await makeJimp(
       path.join(__dirname, "../", "temp", "logo", req.files.logo.name)
     )
