@@ -19,6 +19,7 @@ app.get("/download/:file", (req, res) => {
 });
 
 app.post("/upload", (req, res) => {
+  console.log(__dirname)
   console.log("\nRequest received");
   uploadFiles(req)
     .then(createJimps)
